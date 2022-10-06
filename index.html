@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" content="Amogelang Lincon Mawela" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amogelang Mawela</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- <script src="index.js"></script> -->
+  <script src="https://kit.fontawesome.com/6e1bee0657.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ----------------------------- Header (Home) Section ------------------------------ -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.bmp" alt="logo-image" class="logo" />
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Software/Web <span>Dev</span>eloper.</p>
+        <h1>
+          Hi, I'm <span>Amo</span> <br />
+          from Soshanguve.
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------- About Section ------------------------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/about.jpg" alt="about-image" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            My name is Amogelang Mawela, an undergraduate from Tshwane
+            University of Technology, specializing in Software Development. I am
+            passionate about all things Tech, but I recently started speaking
+            the language of Spiders (Web), so I'm a bit familiar with HTML, CSS and
+            JavaScript. And currently learning Node.JS and React.JS.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>C++</li>
+              <li>Oracle SQL</li>
+              <li>Linux (Ubuntu)</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Tshwane University of Technology</span> <br> N Dip. Software Development</li>
+              <li><span>Itsoseng Combined High School</span> <br> National Senior Cetificate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- ----------------------------- Services Section ------------------------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>I develop both single and multi-page websites, and also slowly transitioning into developing lively three-tier web apps.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Software Development</h2>
+          <p>I majored in Software Development in varsity and the major modules included Technical Programming (with C++), Database and Information Systems.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Database Design</h2>
+          <p>The databases I work with include OracleSQL, MySQL and MongoDB.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------- Portfolio Section ------------------------------ -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work tkoimg">
+          <img src="images/portfolio1.jpg" alt="portfolio-image">
+          <div class="layer">
+            <h3>TKO site</h3>
+            <p>A website for a local organisation that helps school children learn how to read.</p>
+            <a href="https://amogelangmawela.github.io/tko/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work simsimg">
+          <img src="images/portfolio2.jpg" alt="portfolio-image">
+          <div class="layer">
+            <h3>Simon game</h3>
+            <p>A game that tests and helps in developing your short term memory, by remebering the sequence in the pattern of the lights that lit.</p>
+            <a href="https://amogelangmawela.github.io/simonGame/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work constructimg">
+          <img src="images/portfolio3.jpg" alt="portfolio-image">
+          <div class="layer">
+            <h3>Coming soon</h3>
+            <p>NB: The project is under construction.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ----------------------------- Contact Section ------------------------------ -->
+  <div id="contact">
+    <div class="container">
+    <div class="row">
+      <div class="contact-left-col">
+        <h1 class="sub-title contact-heading">Contact Me</h1>
+        <a href="mailto:linconamogelang@gmail.com" class="email"><i class="fa-solid fa-envelope"></i>linconamogelang@gmail.com</a>
+        <p><i class="fa-solid fa-phone"></i>0818573240</p>
+        <div class="social-icons">
+          <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="http://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="externalFiles/myCV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right-col">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+    </div>
+    <!-- ------------- Footer --------------- -->
+    <!-- Include JS script in the body to enable the Side-Menu function in the JS file to successfully work -->
+    <!-- As well as the update date function in the JS file, to successfully work and be visible on the footer  -->
+    <script src="index.js"></script>
+
+    <div class="copyright">
+      <footer>Copyright &#169 <span><script>document.write(currentYear)</script></span>, Amogelang Mawela.</footer>
+    </div>
+  </div>
+
+   <!-- Making Contact form be able to work and send my email a message using Google-sheets -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkUqEwG7IeKZCmnVj97PRb425xH0sNPIbkDZstSHBGexXQVtiPuFvRDjjWfrD2_tsC/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          message.innerHTML = "Thank you, your message was sent successfully.";
+          setTimeout(function(){
+            message.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
