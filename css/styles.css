@@ -485,6 +485,10 @@ nav .fa-solid {
     margin-right: 20px;
   }
 
+  .work.constructimg {
+    width: 350px;
+  }
+
   .contact-left-col,
   .contact-right-col {
     flex-basis: 100%;
